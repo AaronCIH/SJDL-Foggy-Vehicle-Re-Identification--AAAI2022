@@ -6,16 +6,14 @@
 ## 創建流程
 ### 1. Download Public Dataset
 #### * VeriWild
-Page: https://github.com/PKU-IMRE/VERI-Wild
-
+Page: https://github.com/PKU-IMRE/VERI-Wild <br> 
 @inproceedings{lou2019large,
 title={VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild},
 author={Lou, Yihang and Bai, Yan and Liu, Jun and Wang, Shiqi and Duan, Ling-Yu},
 booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
 pages = {3235--3243},
 year={2019}
-} 
-
+} <br> 
 @inproceedings{lou2019large,
  title={Disentangled Feature Learning Network and a Comprehensive Benchmark for Vehicle Re-Identification},
  author={Bai, Yan and Liu, Jun and Lou, Yihang and Wang, Ce and Duan, Ling-Yu},
@@ -24,6 +22,6 @@ year={2019}
 }
 
 #### * Vehicle-1M
-Page: http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/Vehicle1M.htm
+Page: http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/Vehicle1M.htm <br> 
 Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse-to-fine structured feature embedding for vehicle re-identification. AAAI 2018.
 
