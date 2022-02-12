@@ -6,7 +6,7 @@
 ## 創建流程
 1. Download Public Dataset
   * VeriWild
-  @inproceedings{lou2019large,
+  - @inproceedings{lou2019large,
      title={VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild},
      author={Lou, Yihang and Bai, Yan and Liu, Jun and Wang, Shiqi and Duan, Ling-Yu},
      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
