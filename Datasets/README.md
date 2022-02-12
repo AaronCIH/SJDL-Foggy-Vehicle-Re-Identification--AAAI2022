@@ -4,21 +4,21 @@
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Datasets/Dataset.png)
 
 ## 創建流程
-1. Download Public Dataset
-  ### VeriWild
-  Page: https://github.com/PKU-IMRE/VERI-Wild
-  
-  @inproceedings{lou2019large,
-  title={VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild},
-  author={Lou, Yihang and Bai, Yan and Liu, Jun and Wang, Shiqi and Duan, Ling-Yu},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  pages = {3235--3243},
-  year={2019}
-  } 
-  
-  @inproceedings{lou2019large,
-   title={Disentangled Feature Learning Network and a Comprehensive Benchmark for Vehicle Re-Identification},
-   author={Bai, Yan and Liu, Jun and Lou, Yihang and Wang, Ce and Duan, Ling-Yu},
-   booktitle={In IEEE Transactions on Pattern Analysis and Machine Intelligence},
-   year={2021}
-  }
+### Download Public Dataset
+#### VeriWild
+Page: https://github.com/PKU-IMRE/VERI-Wild
+
+@inproceedings{lou2019large,
+title={VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild},
+author={Lou, Yihang and Bai, Yan and Liu, Jun and Wang, Shiqi and Duan, Ling-Yu},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+pages = {3235--3243},
+year={2019}
+} 
+
+@inproceedings{lou2019large,
+ title={Disentangled Feature Learning Network and a Comprehensive Benchmark for Vehicle Re-Identification},
+ author={Bai, Yan and Liu, Jun and Lou, Yihang and Wang, Ce and Duan, Ling-Yu},
+ booktitle={In IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ year={2021}
+}
