@@ -6,6 +6,7 @@
 ## 創建流程
 1. Download Public Dataset
   ### VeriWild
+  Phttps://github.com/PKU-IMRE/VERI-Wild
   @inproceedings{lou2019large,
   title={VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild},
   author={Lou, Yihang and Bai, Yan and Liu, Jun and Wang, Shiqi and Duan, Ling-Yu},
