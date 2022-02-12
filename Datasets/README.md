@@ -4,8 +4,8 @@
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Datasets/Dataset.png)
 
 ## 創建流程
-### Download Public Dataset
-#### VeriWild
+### 1. Download Public Dataset
+#### * VeriWild
 Page: https://github.com/PKU-IMRE/VERI-Wild
 
 @inproceedings{lou2019large,
