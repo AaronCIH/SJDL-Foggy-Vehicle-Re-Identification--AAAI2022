@@ -11,3 +11,5 @@ Github: https://github.com/comeonyang/Depth-Estimation-DCNF
 1. Install according to the instructions.
 2. Move FVRID_SYN_***_prediction.m files to ./Depth-Estimation-DCNF/demo/
 3. run FVRID_SYN_***_prediction.m files
+
+## 3_Synthesis_foggy
