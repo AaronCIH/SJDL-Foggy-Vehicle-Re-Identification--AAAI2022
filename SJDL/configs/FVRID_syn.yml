@@ -1,0 +1,68 @@
+MODEL:
+  NAME: "resnet50"
+  PRETRAIN_PATH: ""
+  LAST_STRIDE: 1
+  PRETRAIN_PATH_reid: ""
+  PRETRAIN_PATH_res: ""
+  SJDL_BASE_W: 1.0
+  SJDL_REST_W: 1.0
+  FIXED_REST: False
+  TENSORBOARDX: False
+
+DATASETS:
+  NAMES: 'FVRID'
+  DATA_PATH: '../Datasets/'
+  TRAIN_PATH: 'FVRID_syn/train_foggy/'
+  TRAIN_GT_PATH: 'FVRID_syn/train_clear/'
+  QUERY_PATH: 'FVRID_syn/query_foggy/'
+  QUERY_GT_PATH: 'FVRID_syn/query_clear/'
+  GALLERY_PATH: 'FVRID_syn/gallery_foggy/'
+  GALLERY_GT_PATH: 'FVRID_syn/gallery_clear/'
+  TEST_PATH: 'test_foggy/'
+  TEST_GT_PATH: 'test_gt/'
+  REAL_FOGGY_PATH: 'FVRID_real/train_foggy/'
+
+DATALOADER:
+  SAMPLER: 'SJDL'
+  NUM_INSTANCE: 6
+  NUM_WORKERS: 8
+  NORMALZIE: False
+  
+SOLVER:
+  IMS_PER_BATCH: 36
+  OPTIMIZER_NAME: 'Adam'
+  MAX_EPOCHS: 120
+  BASE_LR: 0.0001
+  BIAS_LR_FACTOR: 1
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  IMS_PER_BATCH: 36
+  FP16: True
+
+  STEPS: [20, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255]
+  GAMMA: 0.6
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 10
+  WARMUP_METHOD: 'linear'
+
+  LOG_PERIOD: 100
+  EVAL_PERIOD: 1
+  
+INPUT:
+  SIZE_TRAIN: [384, 384]
+  SIZE_TEST: [384, 384]
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PIXEL_STD: [0.5, 0.5, 0.5]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing 
+  PADDING: 0
+
+TEST:
+  IMS_PER_BATCH: 32
+  DEBUG: True
+  WEIGHT: "./output/best.pth"
+  VIS: False
+  MULTI_GPU: False
+
+OUTPUT_DIR: "./output/TEST_FVRID_SYN/"
