@@ -1,8 +1,9 @@
 # FVRID Pre-Processing
 ## 1_Split_Dataset
 * 切割資料集，
+'''bash
 python Split.py
-
+'''
 ## 2_Depth_Estimation
 * Depth from Single Monocular Images
 This is the test code for the paper: "Learning Depth from Single Monocular Images Using Deep Convolutional Neural Fields"
