@@ -19,5 +19,5 @@ Github: https://github.com/comeonyang/Depth-Estimation-DCNF
 % 需要資料: clear_image_folder, depth_image_folder.  # 注意事項: depth folder 需要對應每張clear image 創建folder 並放入predict_depth_gray.png
 % 可調整參數 function beta, function A
 ```bash
-run FVRID_SYN_***_prediction.m files
+run Dense_Foggy_*_OTS.m
 ```
