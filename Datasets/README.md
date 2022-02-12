@@ -32,8 +32,9 @@ Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse
 ## 資料集結構
 * Datasets  <br> 
 ┃FVRID_syn  <br> 
-┃╎╌ train_clear  <br> 
-┃╎╌ train_foggy  <br> 
+┃╎╌ train_clear、train_foggy  <br> 
+┃╎╌ query_clear、query_foggy  <br> 
+┃╎╌ gallery_clear、gallery_foggy  <br> 
 ┃FVRID_real   <br> 
 ┃╎╌ train_foggy  <br> 
 ┃╎╌ query_foggy  <br> 
