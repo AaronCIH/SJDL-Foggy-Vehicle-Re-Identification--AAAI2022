@@ -22,3 +22,8 @@ year={2019}
  booktitle={In IEEE Transactions on Pattern Analysis and Machine Intelligence},
  year={2021}
 }
+
+#### * Vehicle-1M
+Page: http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/Vehicle1M.htm
+Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse-to-fine structured feature embedding for vehicle re-identification. AAAI 2018.
+
