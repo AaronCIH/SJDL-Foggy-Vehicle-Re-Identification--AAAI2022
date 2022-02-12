@@ -13,9 +13,10 @@
   pages = {3235--3243},
   year={2019}
   } 
-@inproceedings{lou2019large,
- title={Disentangled Feature Learning Network and a Comprehensive Benchmark for Vehicle Re-Identification},
- author={Bai, Yan and Liu, Jun and Lou, Yihang and Wang, Ce and Duan, Ling-Yu},
- booktitle={In IEEE Transactions on Pattern Analysis and Machine Intelligence},
- year={2021}
-}
+  
+  @inproceedings{lou2019large,
+   title={Disentangled Feature Learning Network and a Comprehensive Benchmark for Vehicle Re-Identification},
+   author={Bai, Yan and Liu, Jun and Lou, Yihang and Wang, Ce and Duan, Ling-Yu},
+   booktitle={In IEEE Transactions on Pattern Analysis and Machine Intelligence},
+   year={2021}
+  }
