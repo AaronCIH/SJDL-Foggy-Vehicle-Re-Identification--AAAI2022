@@ -34,7 +34,6 @@ Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse
 ### 3. 進入Preprocessing開始創建FVRID
 
 ## 資料集結構
-```bash
 * Datasets  <br> 
 ┃FVRID_syn  <br> 
 ┃╎╌ train_clear、train_foggy  <br> 
@@ -44,4 +43,3 @@ Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse
 ┃╎╌ train_foggy  <br> 
 ┃╎╌ query_foggy  <br> 
 ┃╎╌ gallery_foggy  <br> 
-```
