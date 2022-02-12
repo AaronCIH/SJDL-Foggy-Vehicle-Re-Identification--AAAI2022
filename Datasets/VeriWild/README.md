@@ -1,2 +1,2 @@
-## Vehicle-1M
+## VERI-Wild
 https://github.com/PKU-IMRE/VERI-Wild
