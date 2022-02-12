@@ -27,6 +27,5 @@ Page: http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/Vehicle1M.htm <br>
 Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse-to-fine structured feature embedding for vehicle re-identification. AAAI 2018.
 
 ### 2. 將資料集放入各自資料夾
-
-### 
+### 3. 進入Preprocessing開始創建FVRID
 
