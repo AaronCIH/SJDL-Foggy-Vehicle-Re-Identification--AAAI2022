@@ -64,18 +64,14 @@ See https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/t
 Run following command to train the SJDL model
 ```
 cd SJDL/
-CUDA_VISIBLE_DEVICES=0 python trainer.py -c configs/FVRID_syn.yml MODEL.NAME "resnet50" TEST.VIS True DATALOADER.SAMPLER 'SJDL' OUTPUT_DIR "./output/SJDL/" SOLVER.IMS_PER_BATCH 36  DATALOADER.NUM_WORKERS 8 DATALOADER.NORMALZIE False SOLVER.MAX_EPOCHS 120 MODEL.TENSORBOARDX False MODEL.FIXED_REST False
+CUDA_VISIBLE_DEVICES=0 python trainer.py -c configs/FVRID_syn.yml MODEL.NAME "resnet50" TEST.VIS True OUTPUT_DIR "./output/SJDL/" MODEL.TENSORBOARDX False
 ```
-```CUDA_VISIBLE_DEVICES``` defines usable GPU.
-
-where the ```configs/FVRID_syn.yml``` is the default SJDL training config.
-
-
-
-Example:
-```
-python ./train.py --logPath ./log --dataPath ./training_data.npy --gtPath ./training_gt.npy --batchsize 3 --epochs 1500 --modelPath ./previous_log/preivious_model.h5 --validation_num 200 --steps_per_epoch 80
-```
+where ```CUDA_VISIBLE_DEVICES``` defines usable GPU. <br> 
+where the ```configs/FVRID_syn.yml``` is the default SJDL training config. <br> 
+where the ```MODEL.NAME``` select the backbone. eg. 'resnet50', 'resnet101'... <br>
+where the ```TEST.VIS``` enable resotration result plot. <br>
+where the ```OUTPUT_DIR``` define the output path. <br>
+where the ```MODEL.TENSORBOARDX``` enable tensorboard. <br>
 
 Testing
 ```
