@@ -82,9 +82,9 @@ https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=shari
 cd SJDL/
 CUDA_VISIBLE_DEVICES=0 python inference.py -t -c <Configs> TEST.WEIGHT <PTH_PATH> OUTPUT_DIR <OUTPUT_PATH>
 ```
-where the ```<Configs>``` is the testing configs file.
-where the ```<PTH_PATH>``` is the test weight.
-where the ```<OUTPUT_PATH>``` is the output paths.
+where the ```<Configs>``` is the testing configs file. <br>
+where the ```<PTH_PATH>``` is the test weight. <br>
+where the ```<OUTPUT_PATH>``` is the output paths. <br>
 
 The pre-trained model can be downloaded from Link: <br>
 https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing. <br>
