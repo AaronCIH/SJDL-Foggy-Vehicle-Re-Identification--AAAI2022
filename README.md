@@ -94,10 +94,11 @@ Examples
 ```
 cd SJDL/
 # For FVRID_real
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_real.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_real/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_real.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_real/
 # For FVRID_syn
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_syn.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_syn/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_syn.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_syn/
 ```
+And you can also create the new config at dir ```'./configs'``` for another application.
 
 # Citations
 Please cite this paper in your publications if it is helpful for your tasks:    
