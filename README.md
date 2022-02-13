@@ -86,7 +86,8 @@ where the ```<Configs>``` is the testing configs file.
 where the ```<PTH_PATH>``` is the test weight.
 where the ```<OUTPUT_PATH>``` is the output paths.
 
-The pre-trained model can be downloaded from: https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing.
+The pre-trained model can be downloaded from Link: <br>
+https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing. <br>
 and you can put it in the "./SJLD/Output/"
 
 Examples
