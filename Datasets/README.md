@@ -39,24 +39,23 @@ Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse
 {
   "FVRID_real":[
         { 
-            "train_foggy":
-            "query_foggy":
-            "gallery_foggy":
+            "train_foggy": Real world training data, eg. "20000_c014_007925_0.jpg"  ...
+            "query_foggy": Real world query data, eg. "20156_c094_068364_0.jpg"  ...
+            "gallery_foggy": Real world gallery data, eg. "21247_c001_242288_0.jpg"  ...
         }
    ],
    "FVRID_syn":[
         {
-            "train_clear":
-            "train_foggy":
-            "query_clear":
-            "query_foggy":
-            "gallery_clear":
-            "gallery_foggy":
+            "train_clear": GT training data, eg. "00000_c013_298403_0.jpg" ...
+            "train_foggy": synethetic foggy training data, eg. "00000_c013_298403_0.jpg" ...
+            "query_clear": GT query data, eg. "05000_c170_365655_0.jpg" ...
+            "query_foggy": synethetic foggy query data, eg. "05000_c170_365655_0.jpg" ...
+            "gallery_clear": GT gallery data, eg. "15000_c001_616718_0.jpg" ...
+            "gallery_foggy": synethetic foggy gallery data, eg. "15000_c001_616718_0.jpg" ...
         }
     ]
-    "Preprocessing":,
-    "
-            
-  
+    "Preprocessing": use to construct dataset,
+    "Vehicle1M": source dataset of Vehicle1M,
+    "VeriWild": source dataset of VeriWild,
 }
 ```
