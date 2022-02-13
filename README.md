@@ -53,12 +53,14 @@ Example of real-world data:<br>
 To implement our method you need:
 
 1. Python 3
-2. CPU or NVIDIA GPU + CUDA CuDNN
-3. tensorflow 1.15.0
-4. keras 2.3.0
-5. dtcwt 0.12.0
+2. pytorch 1.7.0+
+3. torchvision 0.8.0+
 
-Training
+# Data Preparation
+Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
+See https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/Datasets
+
+# Train SJDL
 ```
 python ./train.py --logPath ./your_log_path --dataPath /path_to_data/data.npy --gtPath /path_to_gt/gt.npy --batchsize batchsize --epochs epochs --modelPath ./path_to_exist_model/model_to_load.h5 --validation_num number_of_validation_image --steps_per_epoch steps_per_epoch
 ```
@@ -86,15 +88,6 @@ python ./predict.py -dataroot ./testImg -datatype tif -predictpath ./p -batch_si
 
 The pre-trained model can be downloaded from: https://ntucc365-my.sharepoint.com/:u:/g/personal/f05943089_ntu_edu_tw/EZtus9ex-GtNukLuSxWGmPIBEJIzRFMbEl0dFeZ_oTQnVQ?e=xnfqFL. 
 Put the "finalmodel.h5" to the 'modelParam'.
-
-
-
-# Data Preparation
-Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
-
-
-
-
 
 # Citations
 Please cite this paper in your publications if it is helpful for your tasks:    
