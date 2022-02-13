@@ -66,9 +66,10 @@ Run following command to train the SJDL model
 cd SJDL/
 CUDA_VISIBLE_DEVICES=0 python trainer.py -c configs/FVRID_syn.yml MODEL.NAME "resnet50" DATASETS.DATA_PATH '../Datasets/' DATASETS.TRAIN_PATH "FVRID_syn/train_foggy/" DATASETS.TRAIN_GT_PATH "FVRID_syn/train_clear/" DATASETS.QUERY_PATH "FVRID_syn/train_foggy/" DATASETS.QUERY_GT_PATH "FVRID_syn/query_clear/" DATASETS.GALLERY_PATH "FVRID_syn/gallery_foggy/" DATASETS.GALLERY_GT_PATH "FVRID_syn/gallery_clear/" DATASETS.REAL_FOGGY_PATH "FVRID_real/train_foggy/" TEST.VIS True DATALOADER.SAMPLER 'SJDL' OUTPUT_DIR "./output/SJDL/" SOLVER.IMS_PER_BATCH 36  DATALOADER.NUM_WORKERS 8 DATALOADER.NORMALZIE False SOLVER.MAX_EPOCHS 120 MODEL.TENSORBOARDX False MODEL.FIXED_REST False
 ```
-```CUDA_VISIBLE_DEVICES```
-data.npy should be numpy of training image whose shape is (number_of_image, 480, 640, 3). The range is (0, 255) and the datatype is uint8 or int.<br>
-*gt.npy should be numpy of ground truth image, whose shape is (number_of_image, 480, 640, 3). The range is (0, 255) and datatype is uint8 or int.
+```CUDA_VISIBLE_DEVICES``` defines usable GPU.
+where the ```configs/FVRID_syn.yml``` is the default SJDL training config.
+whrer the ```configs/FVRID_syn.yml```
+
 
 Example:
 ```
