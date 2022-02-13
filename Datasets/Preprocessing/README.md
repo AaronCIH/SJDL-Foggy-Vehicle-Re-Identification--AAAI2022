@@ -17,7 +17,7 @@ Github: https://github.com/comeonyang/Depth-Estimation-DCNF
 ## 3_Synthesis_foggy
 % With the estimated depth map. We can render fog by the following physical model. I(x) = J (x)* t(x) + A(1-t(x)), where A is the atmoshperic light and t(x) is the transmission value. <br>
 % Required data: clear_image_folder, depth_image_folder.<br>  
-# Note: the depth folder needs to be created with the same name and put the corresponding depth map (i.e., predict_depth_gray.png) into it. <br>
+Note: the depth folder needs to be created with the same name and put the corresponding depth map (i.e., predict_depth_gray.png) into it. <br>
 % Controllable parameters: beta and A. <br>
 ```bash
 run Dense_Foggy_*_OTS.m
