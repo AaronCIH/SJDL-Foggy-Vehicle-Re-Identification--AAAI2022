@@ -31,7 +31,7 @@ Image Relighting-[[MB-Net]](https://github.com/weitingchen83/NTIRE2021-Depth-Gui
 
 
 # Dataset
-Both synthetic data and real-world data are adopted in this paper:<br>
+Both synthetic data and real-world data are adopted in this paper:<br><br><br>
 Example of synthetic data:<br>
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/fig/dataset_syn.png)
 
