@@ -58,8 +58,7 @@ To implement our method you need:
 
 ## Data Preparation
 Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
-See https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/Datasets
-
+See [[Data Preparation]](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/Datasets).
 ## Train SJDL
 Run following command to train the SJDL model
 ```
