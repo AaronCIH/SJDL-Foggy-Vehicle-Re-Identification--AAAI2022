@@ -1,7 +1,7 @@
 # SJDL-Foggy-Vehicle-Re-Identification--AAAI2022
 
 <!-- ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Poster.png) -->
-![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/teasor_fig_1.png)
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/fig/teasor_fig_1.png)
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/teasor_fig_2.png)
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/teasor_fig_3.png)
 
