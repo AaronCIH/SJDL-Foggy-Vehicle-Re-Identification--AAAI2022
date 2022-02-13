@@ -1,6 +1,9 @@
 # SJDL-Foggy-Vehicle-Re-Identification--AAAI2022
 
-![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Poster.png)
+<!-- ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Poster.png) -->
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/teasor_fig_1.png)
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/teasor_fig_2.png)
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/teasor_fig_3.png)
 
 
 # Abstract:
@@ -20,16 +23,26 @@ Image Relighting-[[MB-Net]](https://github.com/weitingchen83/NTIRE2021-Depth-Gui
 
 
 # Network Architecture
+## Joint Defogging Learning (JDL) -
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/architecture.png)
 
-![image](folder/architecture.png)
+## Semi-supervised Joint Defogging Learning (SJDL) -
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/semi.png)
+
 
 
 # Dataset
-We also propose a large scale dataset called Comprehensive Snow Dataset (CSD). It can present the snow scenes in more comprehensive way. You can leverage this dataset to train your network.<br>
+Both synthetic data and real-world data are adopted in this paper:
+Example of synthetic data:<br>
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/dataset_syn.png)
+
+Example of real-world data:<br>
+![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/dataset_real.png)
+
+<!-- 
 [[Dataset Download]](https://ccncuedutw-my.sharepoint.com/:u:/g/personal/104501531_cc_ncu_edu_tw/EfCooq0sZxxNkB7F8HgCyKwB-sJQtVE59_Gpb9soatYi5A?e=5NjDhb)
 ![image](folder/csd.png)
-
-
+ -->
 
 
 # Setup and environment
@@ -70,9 +83,12 @@ python ./predict.py -dataroot ./testImg -predictpath ./p -batch_size 3
 python ./predict.py -dataroot ./testImg -datatype tif -predictpath ./p -batch_size 3
 ```
 
-
 The pre-trained model can be downloaded from: https://ntucc365-my.sharepoint.com/:u:/g/personal/f05943089_ntu_edu_tw/EZtus9ex-GtNukLuSxWGmPIBEJIzRFMbEl0dFeZ_oTQnVQ?e=xnfqFL. 
 Put the "finalmodel.h5" to the 'modelParam'.
+
+
+
+# Data Preparation
 
 
 # Citations
