@@ -40,7 +40,21 @@ Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse
   "FVRID_real":[
         { 
             "train_foggy":
+            "query_foggy":
+            "gallery_foggy":
+        }
+   ],
+   "FVRID_syn":[
+        {
             "train_clear":
+            "train_foggy":
+            "query_clear":
+            "query_foggy":
+            "gallery_clear":
+            "gallery_foggy":
+        }
+    ]
+    "pro
             
   
 }
