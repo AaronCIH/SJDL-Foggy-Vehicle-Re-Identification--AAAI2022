@@ -23,10 +23,10 @@ Image Relighting-[[MB-Net]](https://github.com/weitingchen83/NTIRE2021-Depth-Gui
 
 
 # Network Architecture
-## Joint Defogging Learning (JDL) -
+## Joint Defogging Learning (JDL)
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/architecture.png)
 
-## Semi-supervised Joint Defogging Learning (SJDL) -
+## Semi-supervised Joint Defogging Learning (SJDL)
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/fig/semi.png)
 
 
@@ -47,7 +47,7 @@ Example of real-world data:<br>
 
 # Setup and environment
 
-To generate the recovered result you need:
+To implement our method you need:
 
 1. Python 3
 2. CPU or NVIDIA GPU + CUDA CuDNN
@@ -68,8 +68,6 @@ Example:
 python ./train.py --logPath ./log --dataPath ./training_data.npy --gtPath ./training_gt.npy --batchsize 3 --epochs 1500 --modelPath ./previous_log/preivious_model.h5 --validation_num 200 --steps_per_epoch 80
 ```
 
-
-
 Testing
 ```
 $ python ./predict.py -dataroot ./your_dataroot -datatype datatype -predictpath ./output_path -batch_size batchsize
@@ -89,6 +87,10 @@ Put the "finalmodel.h5" to the 'modelParam'.
 
 
 # Data Preparation
+Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
+
+
+
 
 
 # Citations
@@ -97,10 +99,8 @@ Please cite this paper in your publications if it is helpful for your tasks:
 Bibtex:
 ```
 @inproceedings{chen2021all,
-  title={ALL Snow Removed: Single Image Desnowing Algorithm Using Hierarchical Dual-Tree Complex Wavelet Representation and Contradict Channel Loss},
-  author={Chen, Wei-Ting and Fang, Hao-Yu and Hsieh, Cheng-Lin and Tsai, Cheng-Che and Chen, I and Ding, Jian-Jiun and Kuo, Sy-Yen and others},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  pages={4196--4205},
-  year={2021}
+  title={SJDL-Vehicle: Semi-supervised Joint Defogging Learning for Foggy Vehicle Re-identification},
+  author={Chen, Wei-Ting and Chen, I-Hsiang and Yeh, Chih-Yuan and Yang, Hao-Hsiang and Ding, Jian-Jiun and Kuo, Sy-Yen},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
 }
 ```
