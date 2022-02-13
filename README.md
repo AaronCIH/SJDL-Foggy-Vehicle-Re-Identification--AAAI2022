@@ -48,7 +48,7 @@ Example of real-world data:<br>
 
 
 
-# Setup and environment
+## Setup and environment
 
 To implement our method you need:
 
@@ -56,11 +56,11 @@ To implement our method you need:
 2. pytorch 1.7.0+
 3. torchvision 0.8.0+
 
-# Data Preparation
+## Data Preparation
 Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
 See https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/Datasets
 
-# Train SJDL
+## Train SJDL
 Run following command to train the SJDL model
 ```
 cd SJDL/
@@ -73,21 +73,28 @@ where the ```TEST.VIS``` enable resotration result plot. <br>
 where the ```OUTPUT_DIR``` define the output path. <br>
 where the ```MODEL.TENSORBOARDX``` enable tensorboard. <br>
 
-Testing
+## Pretrained Models
+We provide the pretrained SJDL, training on FVRID for your convinint. You can download it from the following link: 
+https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing
+
+## Testing
 ```
-$ python ./predict.py -dataroot ./your_dataroot -datatype datatype -predictpath ./output_path -batch_size batchsize
+cd SJDL/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c <Configs> TEST.WEIGHT <PTH_PATH> OUTPUT_DIR <OUTPUT_PATH>```
 ```
-*datatype default: tif, jpg ,png
+where the ```<Configs>``` is the testing configs file.
+where the ```<PTH_PATH>``` is the test weight.
+where the ```<OUTPUT_PATH>``` is the output paths.
+
+The pre-trained model can be downloaded from: https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing.
+and you can put it in the "./SJLD/Output/"
 
 Examples
 ```
-$ 
-python ./predict.py -dataroot ./testImg -predictpath ./p -batch_size 3
-python ./predict.py -dataroot ./testImg -datatype tif -predictpath ./p -batch_size 3
+cd SJDL/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_real.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_real/```
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_syn.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_syn/```
 ```
-
-The pre-trained model can be downloaded from: https://ntucc365-my.sharepoint.com/:u:/g/personal/f05943089_ntu_edu_tw/EZtus9ex-GtNukLuSxWGmPIBEJIzRFMbEl0dFeZ_oTQnVQ?e=xnfqFL. 
-Put the "finalmodel.h5" to the 'modelParam'.
 
 # Citations
 Please cite this paper in your publications if it is helpful for your tasks:    
