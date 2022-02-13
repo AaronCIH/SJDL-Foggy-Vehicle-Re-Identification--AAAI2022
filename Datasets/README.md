@@ -1,9 +1,9 @@
-# FVRID 資料集創建
-透過人工label，創建第一個包含Foggy的訓練集。
-## 資料集資訊
+# FVRID dataset for training and testing
+
+## Examples of the dataset
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Datasets/Dataset.png)
 
-## 創建流程
+## Pipeline of generation
 ### 1. Download Public Dataset
 #### * VeriWild
 Page: https://github.com/PKU-IMRE/VERI-Wild
@@ -30,10 +30,10 @@ Page: http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/Vehicle1M.htm <br>
 ```bash
 Haiyun Guo, Chaoyang Zhao, Zhiwei Liu, Jinqiao Wang, Hanqing Lu: Learning coarse-to-fine structured feature embedding for vehicle re-identification. AAAI 2018.
 ```
-### 2. 將資料集放入各自資料夾
-### 3. 進入Preprocessing開始創建FVRID
+### 2. Place the datasets to the corrseponding folders.
+### 3. Create FVRID and enter into preposcessing.
 
-## 資料集結構
+## Structure of the dataset
 * Datasets
 ```bash
 {
