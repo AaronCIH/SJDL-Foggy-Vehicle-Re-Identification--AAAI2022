@@ -80,7 +80,7 @@ https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=shari
 ## Testing
 ```
 cd SJDL/
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c <Configs> TEST.WEIGHT <PTH_PATH> OUTPUT_DIR <OUTPUT_PATH>```
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c <Configs> TEST.WEIGHT <PTH_PATH> OUTPUT_DIR <OUTPUT_PATH>
 ```
 where the ```<Configs>``` is the testing configs file.
 where the ```<PTH_PATH>``` is the test weight.
@@ -93,8 +93,8 @@ and you can put it in the "./SJLD/Output/"
 Examples
 ```
 cd SJDL/
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_real.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_real/```
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_syn.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_syn/```
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_real.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_real/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c FVRID_syn.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_syn/
 ```
 
 # Citations
