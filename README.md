@@ -61,6 +61,7 @@ Since the policy of Veri-1M, we can only provide the codes to synthesize the fog
 See https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/Datasets
 
 # Train SJDL
+Run following command to train the SJDL model
 ```
 python ./train.py --logPath ./your_log_path --dataPath /path_to_data/data.npy --gtPath /path_to_gt/gt.npy --batchsize batchsize --epochs epochs --modelPath ./path_to_exist_model/model_to_load.h5 --validation_num number_of_validation_image --steps_per_epoch steps_per_epoch
 ```
