@@ -73,7 +73,7 @@ where the ```OUTPUT_DIR``` define the output path. <br>
 where the ```MODEL.TENSORBOARDX``` enable tensorboard. <br>
 
 ## Pretrained Models
-We provide the pretrained SJDL, training on FVRID for your convinint. You can download it from the following link: 
+We provide the pretrained SJDL, training on FVRID for your convinient. You can download it from the following link: 
 https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing
 
 ## Testing
