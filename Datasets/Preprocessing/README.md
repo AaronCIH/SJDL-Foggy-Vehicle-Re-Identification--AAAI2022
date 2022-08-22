@@ -23,8 +23,8 @@ Due to the original trained weight of depth estimation has been deleted, I provi
 
 > Required data: clear_image_folder, depth_image_folder.<br>  
 
-> Note: the depth folder needs to be created with the same name and put the corresponding depth map (i.e., predict_depth_gray.png) into it. 
-> <br> Controllable parameters: beta and A. <br>
+Note: the depth folder needs to be created with the same name and put the corresponding depth map (i.e., predict_depth_gray.png) into it. 
+<br> Controllable parameters: beta and A. <br>
 ```bash
 run Dense_Foggy_*_OTS.m
 ```
