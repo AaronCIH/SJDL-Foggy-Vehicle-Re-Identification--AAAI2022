@@ -1,5 +1,5 @@
 # FVRID Pre-Processing
-% There are many processes have to check your data path, please kindly check it with the annotations: \bplease check your path !!!!
+> There are many processes have to check your data path, please kindly check it with the annotations: please check your path !!!!
 
 ## 1_Split_Dataset
 ```bash
