@@ -12,6 +12,7 @@ This is the test code for the paper: "Learning Depth from Single Monocular Image
 Github: https://github.com/comeonyang/Depth-Estimation-DCNF
 ```bash
 1. Install according to the instructions.
+2. Download the pre-trained model and move to created folder './model_trained'
 2. Move FVRID_SYN_***_prediction.m files to ./Depth-Estimation-DCNF/demo/
 3. run FVRID_SYN_***_prediction.m files
 ```
