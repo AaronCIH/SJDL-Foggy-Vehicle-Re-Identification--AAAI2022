@@ -14,7 +14,7 @@ Github: https://github.com/comeonyang/Depth-Estimation-DCNF
 1. Install according to the instructions.
 2. Download the pre-trained model and move to created folder './model_trained'
 2. Move FVRID_SYN_***_prediction.m files to ./Depth-Estimation-DCNF-master/demo/
-3. run FVRID_SYN_***_prediction.m files
+3. run FVRID_SYN_***_prediction.m files (on the matlab)
 ```
 Due to the original trained weight of depth estimation has been deleted, I provieds the record link:https://drive.google.com/drive/folders/1cJtLa-3fSv4xSd-njEp3R4Ebz0uWjlrX?usp=sharing
 
