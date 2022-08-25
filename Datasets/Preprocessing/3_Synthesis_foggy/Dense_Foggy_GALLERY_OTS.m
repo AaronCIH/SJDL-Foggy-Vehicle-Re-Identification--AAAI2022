@@ -3,11 +3,13 @@
 % example: clear_image_folder 內有一張 clear_x.png, 要在depth_image_foler/clear_x/predict_depth_gray.png
 % 可調整參數 function beta, function A
 clear all
-CLEAR_PATH = ('../../FVRID_syn/gallery_clear/');   % !!!!!!!!!!
-DEPTH_PATH = ('../../FVRID_syn/Depth/gallery_clear/'); % !!!!!!!!!!
-SAVE_PATH = ('../../FVRID_syn/gallery_foggy/');   % !!!!!!!!!!
+CLEAR_PATH = ('../../FVRID_syn/gallery_clear/');   % please check your path !!!!
+DEPTH_PATH = ('../../FVRID_syn/Depth/gallery_clear/'); % please check your path !!!!
+SAVE_PATH = ('../../FVRID_syn/gallery_foggy/');   % please check your path !!!!
+mkdir(SAVE_PATH);
+
 clear_image_list = dir(CLEAR_PATH);
-% length(clear_image_list)
+%length(clear_image_list)
 
 %start index
 start_index = 1;  % !!!!!!!!!!
@@ -16,8 +18,8 @@ end_index = length(clear_image_list); % !!!!!!!!!! need to setting process max n
 for index = start_index : end_index
     image_name = clear_image_list(index).name;
     if (image_name ~= ".") && (image_name ~= "..")
-        depth_folder = image_name(1:20);   
-        fprintf('processing image (%d of %d): %s\n', index, end_index, image_name(1:20));
+        depth_folder = image_name(1:19);   
+        fprintf('processing image (%d of %d): %s\n', index, end_index, image_name(1:19));
         
         image = imread([CLEAR_PATH,image_name]);
         image = im2double(image);
@@ -28,8 +30,8 @@ for index = start_index : end_index
         depth = imresize(depth,[x1,y1],'bicubic');
 %         fprintf("%f ", depth(1,1));
 %         resize = imresize(image,[224,224],'bicubic');
-        A = A_Rnad();  # !!!!!!!!
-        beta = betaRand();   # !!!!!!!!!
+        A = A_Rnad();  % !!!!!!!!
+        beta = betaRand();   % !!!!!!!!!
         t = [];
         t_temp = [];
         t_temp = exp(-beta*depth);
@@ -38,9 +40,8 @@ for index = start_index : end_index
         t(:,:,3) = t_temp;
         newG = image.*t+A*(1-t);
         newG2 = im2uint8(newG);
-%         new_file_path = [SAVE_PATH,depth_folder,'/'];
-%         mkdir(new_file_path);
-        new_filename = [SAVE_PATH,depth_folder,'_',num2str(beta),'.jpg'];
+
+        new_filename = [SAVE_PATH,image_name];
         imwrite(newG2, new_filename);  % save
         fprintf("saving img ---");
 %         figure
@@ -53,14 +54,14 @@ fprintf("Finish !! \n");
 
 
 function beta = betaRand()
-    xmin=0.4;
-    xmax=1.6;
+    xmin=1.0;
+    xmax=5.0;
     n = 1;
     beta = xmin+rand(1,1)*(xmax-xmin);
 end
 
 function A = A_Rnad()
-    xmin=0.5;
+    xmin=0.4;
     xmax=1;
     n = 1;
     A = xmin+rand(1,1)*(xmax-xmin);
