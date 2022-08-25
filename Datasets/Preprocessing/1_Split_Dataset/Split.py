@@ -35,11 +35,11 @@ for idx in FVRID_CSV.index:
     data = FVRID_CSV.loc[idx].values
     if data[2] == 'Veriwild':
         src_ = os.path.join(VERIWILD_dir, data[4])
-        dst_ = os.path.join("../../"+data[3], data[0])
+        dst_ = os.path.join("../../"+data[3], data[0])  # please check your path
         shutil.copy(src_, dst_)
     else:
         src_ = os.path.join(VEHICLE1M_dir, data[4])
-        dst_ = os.path.join("../../"+data[3], data[0])
+        dst_ = os.path.join("../../"+data[3], data[0])  # please check your path
         shutil.copy(src_, dst_)      
 
 print("Finish!")  
