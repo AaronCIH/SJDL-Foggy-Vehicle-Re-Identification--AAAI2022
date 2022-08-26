@@ -99,6 +99,7 @@ CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_real.yml TEST.W
 CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_syn.yml TEST.WEIGHT ./output/best.pth OUTPUT_DIR ./output/Test_on_FVRID_syn/
 ```
 And you can also create the new config at dir ```'./configs'``` for another application.
+If you train another weights, please change the ```TEST.WEIGHT```.
 
 # Citations
 Please cite this paper in your publications if it is helpful for your tasks:    
