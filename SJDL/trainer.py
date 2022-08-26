@@ -20,7 +20,7 @@ from model import build_SJDL
 from loss import make_loss_for_syn, make_loss_for_real
 
 from collections import defaultdict
-from apex import amp
+from torch.cuda import amp
 from sync_bn import convert_model
 from optim import make_optimizer, WarmupMultiStepLR
 from evaluate import eval_defoggy, euclidean_dist, eval_func
@@ -117,7 +117,7 @@ def train():
     loss_for_real = make_loss_for_real(cfg)
 
     # Step7. Training
-    print("#In[3]: Start traing--------------------------------")
+    print("#In[3]: Start training--------------------------------")
     trainer = SJDLTrainer(cfg, SJDL, train_dl, val_dl, real_dl,
                              loss_for_syn, loss_for_real, num_query, num_gpus)
 

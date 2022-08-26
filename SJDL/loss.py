@@ -239,11 +239,13 @@ class self_constraint_loss(nn.Module):
         for im1, im2 in zip(img1s, img2s):
             im1 = F.interpolate(im1, size=255)
             im2 = F.interpolate(im2, size=255)
-            fft1 = torch.rfft( im1, signal_ndim=3, onesided=False, normalized=True) # fft tranform
-            fft2 = torch.rfft( im2, signal_ndim=3, onesided=False, normalized=True) # fft tranform
-            inner_product = (fft1 * fft2).sum(dim=-1)
-            norm1 = (fft1.pow(2).sum(dim=-1)+1e-20).pow(0.5)
-            norm2 = (fft2.pow(2).sum(dim=-1)+1e-20).pow(0.5)
+            fft1 = torch.fft.fft2(im1, dim=(-2, -1), norm=None) # fft tranform, with complex
+            fft1_2dim = torch.stack((fft1.real, fft1.imag), -1)
+            fft2 = torch.fft.fft2(im2, dim=(-2, -1), norm=None) # fft tranform, with complex
+            fft2_2dim = torch.stack((fft2.real, fft2.imag), -1)
+            inner_product = (fft1_2dim * fft2_2dim).sum(dim=-1)
+            norm1 = (fft1_2dim.pow(2).sum(dim=-1)+1e-20).pow(0.5)
+            norm2 = (fft2_2dim.pow(2).sum(dim=-1)+1e-20).pow(0.5)
             cos = inner_product / (norm1*norm2 + 1e-20)
             loss_mean.append(-1.0*cos.mean())
         loss_mean = torch.tensor(loss_mean)
