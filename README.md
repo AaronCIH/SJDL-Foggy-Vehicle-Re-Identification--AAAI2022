@@ -6,7 +6,7 @@
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/fig/teasor_fig_3.png) -->
 This is official implentation of the paper "SJDL-Vehicle: Semi-supervised Joint Defogging Learning for Foggy Vehicle Re-identification".
 
-###### Update the final version! 20220826.
+### Update the final version! 20220826.
 According to the device updating, it must to correspond to the newer version of torch. And I provides some additional datas.
 > 1. I re-edits the final version, and provides the conda environment packet.
 > 2. Due to FVRID_syn: synthesis FVRID dataset process was based on the depth_estimation, but the original author had changed the model weights. So I provides the depth map of the FVRID_syn dataset, and you can use that to synthesis the whole dataset.
