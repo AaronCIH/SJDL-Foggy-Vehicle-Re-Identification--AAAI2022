@@ -56,7 +56,7 @@ To implement our method you need:
 > 4. yacs
 > 5. tqdm
 
-**As the device was updated, I changed the environment parameters for the RTX3090 and provided the final version, which can be generated with** ```conda env create -f environment.yml``` . In 08/26/2022.
+**As the device was updated, I changed the environment parameters for the RTX3090 and provided the final version, which can be generated with** ```conda env create -f environment.yml```. In 08/26/2022.
 
 ## Data Preparation
 Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
