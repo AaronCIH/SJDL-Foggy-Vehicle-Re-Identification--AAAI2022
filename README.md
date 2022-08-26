@@ -52,14 +52,18 @@ Example of real-world data:<br>
 ## Setup and environment
 
 To implement our method you need:
+> 1. Python 3.10
+> 2. pytorch 1.8.0+
+> 3. torchvision 0.13.0+
+> 4. yacs
+> 5. tqdm
 
-1. Python 3
-2. pytorch 1.7.0+
-3. torchvision 0.8.0+
+**As the device was updated, I changed the environment parameters for the RTX3090 and provided the final version, which can be generated with conda env create -f environment.yml .** In 08/26/2022.
 
 ## Data Preparation
 Since the policy of Veri-1M, we can only provide the codes to synthesize the foggy data and the index of the real-world foggy data. Please follow the steps to generate the data:
 See [Data Preparation](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/tree/master/Datasets).
+
 ## Train SJDL
 Run following command to train the SJDL model
 ```
@@ -72,6 +76,13 @@ where the ```MODEL.NAME``` select the backbone. eg. 'resnet50', 'resnet101'... <
 where the ```TEST.VIS``` enable resotration result plot. <br>
 where the ```OUTPUT_DIR``` define the output path. <br>
 where the ```MODEL.TENSORBOARDX``` enable tensorboard. <br>
+
+### Common problem
+1. If the gpu memory is insufficient, please lower the number of "configs/FVRID_syn.yml":
+   ```DATALOADER.NUM_WORKERS``` and ```SOLVER.IMS_PER_BATCH  # Must be a multiple of DATALOADER.NUM_INSTANCE``` .
+2. If you encounter an amp conflict, there are two possibilities: torch version problem and the device must have support.
+   If your device not support, please keep the ```"configs/FVRID_syn.yml": SOLVER.FP16 = False```.
+3. If you encounter the loss.py line:242 torch.fft problem, please check the torch version and find the corresponding version of the fft.
 
 ## Pretrained Models
 We provide the pretrained SJDL, training on FVRID for your convinient. You can download it from the following link: 
