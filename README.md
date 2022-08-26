@@ -88,15 +88,15 @@ where the ```<OUTPUT_PATH>``` is the output paths. <br>
 
 The pre-trained model can be downloaded from Link: <br>
 https://drive.google.com/file/d/1WhsvYQP-qg1R-BcpH5lonjxh4DYp2ouv/view?usp=sharing. <br>
-and you can put it at the dir ```'./SJLD/Output/'```
+and you can put it at the dir ```'./SJLD/output/'```
 
 Examples
 ```
 cd SJDL/
 # For FVRID_real
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_real.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_real/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_real.yml TEST.WEIGHT ./output/best.pth OUTPUT_DIR ./output/Test_on_FVRID_real/
 # For FVRID_syn
-CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_syn.yml TEST.WEIGHT ./Output/best.pth OUTPUT_DIR ./Output/Test_on_FVRID_syn/
+CUDA_VISIBLE_DEVICES=0 python inference.py -t -c ./configs/FVRID_syn.yml TEST.WEIGHT ./output/best.pth OUTPUT_DIR ./output/Test_on_FVRID_syn/
 ```
 And you can also create the new config at dir ```'./configs'``` for another application.
 
