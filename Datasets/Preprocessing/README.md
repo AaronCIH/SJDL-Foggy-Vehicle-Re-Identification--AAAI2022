@@ -18,6 +18,8 @@ Github: https://github.com/comeonyang/Depth-Estimation-DCNF
 ```
 Due to the original trained weight of depth estimation has been deleted, I provieds the record link:https://drive.google.com/drive/folders/1cJtLa-3fSv4xSd-njEp3R4Ebz0uWjlrX?usp=sharing
 
+In addition, I have also sorted out additional depth annotations, you can download the data directly, and put the folder to '''"../Datasets/FVRID_syn/Depth/*"''': https://drive.google.com/drive/u/1/folders/1H2bhzxQGaQIB4wYhsB8yOX7-id9WibFl
+
 ## 3_Synthesis_foggy
 > With the estimated depth map. We can render fog by the following physical model.
 > `I(x) = J (x)* t(x) + A(1-t(x))`, where A is the atmoshperic light and t(x) is the transmission value. <br>
