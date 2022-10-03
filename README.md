@@ -1,12 +1,12 @@
 # SJDL-Vehicle: Semi-supervised Joint Defogging Learning for Foggy Vehicle Re-identification--AAAI2022
-# Paper Link: https://ojs.aaai.org/index.php/AAAI/article/view/19911
-# Poster Link: https://drive.google.com/file/d/1-j8K5J2ydOPUAF-o_w4K6VWxatbkvoFF/view?usp=sharing
 
 <!-- ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/Poster.png) -->
 <!-- ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/fig/teasor_fig_1.png)
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/fig/teasor_fig_2.png)
 ![image](https://github.com/Cihsaing/SJDL-Foggy-Vehicle-Re-Identification--AAAI2022/blob/master/fig/teasor_fig_3.png) -->
 This is official implentation of the paper "SJDL-Vehicle: Semi-supervised Joint Defogging Learning for Foggy Vehicle Re-identification".
+* Paper Link: https://ojs.aaai.org/index.php/AAAI/article/view/19911
+* Poster Link: https://drive.google.com/file/d/1-j8K5J2ydOPUAF-o_w4K6VWxatbkvoFF/view?usp=sharing
 
 ### Update the final version! 20220826.
 According to the device updating, it must to correspond to the newer version of torch. And I provides some additional datas.
